@@ -1,0 +1,211 @@
+html {
+	font-size: var(--font-size-base);
+}
+
+body {
+	background-color: var(--color-background);
+	color: var(--color-text-color);
+	font-family: 'Jost';
+}
+
+.top-bar {
+   position: fixed;
+   top: 0;
+   width: 100%;
+   background-color: var(--color-variation-4);
+   padding: 0.2rem;
+   z-index: 5;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.logo img {
+   height: 50px;
+}
+.login-btn {
+   padding: 8px 20px;
+   border: none;
+   background-color: transparent;
+   color: var(--color-text-color);
+	font-family: 'Jost';
+	font-weight: 200;
+}
+
+header {
+	text-align: center;
+	margin-top: 5rem;
+	padding: 1rem 0 1rem 0;
+	font-size: var(--font-size-large);
+	background-color: var(--color-secondary);
+}
+
+h1 {
+	font-family: 'Petersburg';
+	font-size: 64px;
+}
+
+.header__title-small {
+	font-size: var(--font-size-small);
+	color: var(--color-tertiary);
+}
+
+.page-wrapper {
+	padding: var(--spacing-medium);
+	display: flex;
+	flex-flow: row nowrap;
+	gap: var(--spacing-large);
+}
+
+.overview{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.overview__button-menu{
+	width: 90%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	padding-bottom: 0.5rem;
+	font-family: 'Petersburg';
+	border-bottom: 1px solid black;
+	margin-bottom: 2rem;
+}
+
+.overview__button {
+	color: var(--color-tertiary);
+	font-size: 28px;
+
+}
+
+.overview__button:hover,
+.overview__button--active {
+	color: var(--color-primary);
+}
+
+.component {
+	display: none;
+	flex-flow: column nowrap;
+	gap: var(--spacing-large);
+	margin-left: 1.5rem;
+}
+
+.component--visible {
+	display: flex;
+}
+
+.component-state {
+	display: flex;
+	width: 100%;
+	flex-flow: column nowrap;
+	gap: var(--spacing-small);
+}
+
+.component-state__name {
+	color: var(--color-tertiary);
+}
+
+.home__container {
+	display: flex;
+	width: 100%;
+	gap: 2rem;
+	padding: 1rem;
+ }
+
+.home__image{
+	width: 150px;
+	flex-basis: 50%;
+	box-shadow: 10px 10px 10px lightgrey;
+}
+
+.home__text-container{
+	display: flex;
+	flex-basis: 50%;
+	width: 100%;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 0.8rem;
+}
+
+.text-date{
+	font-size: 12px;
+}
+
+.textbox{
+	text-align: left;
+}
+
+.textbox-bold{
+	font-weight: bold;
+}
+
+a{
+text-decoration: underline;
+}
+
+.search-section{
+	background-color: var(--color-variation-4);
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	width: 100vw;
+	padding: 1rem;
+}
+.search-button{
+	background-color: var(--color-text-color);
+	color: var(--color-variation-4);
+}
+
+.latest-item{
+	display: flex;
+	flex-direction: row;
+}
+
+.latest-item img {
+	width: 100px;
+}
+
+footer {
+   background-color: var(--color-variation-4);
+   padding: 20px 0;
+   text-align: center;
+	display: flex;
+	flex-direction: column;
+	margin-top: 2rem;
+}
+.footer-content {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+	font-family: 'Petersburg'
+}
+.logo {
+   width: 100px;
+   height: auto;
+}
+.footer-links {
+   margin-left: 30px;
+   margin-right: 30px;
+}
+.link-group {
+   margin-bottom: 10px;
+}
+.link-group a {
+   color: #333333;
+   text-decoration: none;
+   margin-right: 10px;
+}
+.link-group a:hover {
+   color: #666;
+}
+.copyright {
+   margin-top: 20px;
+}
+.copyright p {
+   color: #666;
+   font-size: 14px;
+}

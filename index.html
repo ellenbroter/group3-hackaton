@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="/css/reset.css">
+	<link rel="stylesheet" href="/css/variables.css">
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/css/fonts.css">
+	<title>Taste - Food Recipes</title>
+</head>
+<body>
+	<div class="top-bar">
+      <div class="logo">
+          <img src="/assets/_1d54a118-f607-48ae-b9fb-c2ae6ad72f82-removebg-preview.png" alt="Logo">
+      </div>
+      <div class="login-btn">
+          <a href="#login">Log In</a>
+      </div>
+  </div>
+	<header><h1>Taste</h1></header>
+	<div class="pagewrapper">
+		<aside class="overview">
+			<ul class="overview__button-menu">
+				<li>
+					<button data-component-to-show="home" class="overview__button overview__button--active">
+						Home
+					</button>
+				</li>
+				
+				<li>
+					<button data-component-to-show="recipes" class="overview__button">
+						Recipes
+					</button>
+				</li>
+				
+				<li>
+					<button data-component-to-show="tips" class="overview__button">
+						Tips
+					</button>
+				</li>
+				
+				<li>
+					<button data-component-to-show="qanda" class="overview__button">
+						Q&A
+					</button>
+				</li>
+			</ul>
+		</aside>
+		<main>
+			<div class="component component--visible" data-component-name="home">
+				<div class="component-state">
+					<div class="component-state__name">
+						<div class="home__container">
+							<img src="/assets/spoon_vegme_tapasbord_262.jpg" alt="Image of delicious food" class="home__image">
+							<div class="home__text-container">
+								 <p class="text-date">7.Februar 2024</p>
+								 <p class="textbox-bold">Your own collection of delicious recipes!</p>
+								 <p class="textbox">In a hectic everyday life, it can often be a challenge to find time to plan and shop for healthy and varied dinners. That's where meal kits can be a good solution. Over the past three weeks, I have tested meal kits from HelloFresh with good experiences. Do you also want to try HelloFresh? Read more about my experiences and get a discount code here!</p>
+								<a href="#readmore">Read More</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="component-state__variation">
+						<section class="search-section">
+							<h2>Hungry? Let me help you find something good to eat!</h2>
+							<form>
+								 <input type="text" name="search" placeholder="Search for recipes" class="search-input">
+								 <button type="submit" class="search-button">Search</button>
+							</form>
+						</section>
+					</div>
+
+					<div class="component-state__variation">
+						<section class="latest-section">
+							<h2>Latest</h2>
+							<card class="latest-item">
+								<img src="/assets/Rema1000-SP3-ramen-kyllingpolsetaco-3.jpg" alt="Image 1">
+								<h3>Recipe 1</h3>
+								<p>Description for Recipe 1</p>
+								<button class="view-button">View</button>
+							</dcardiv>
+							<div class="latest-item">
+								<img src="/assets/Kremet-pasta-tiktok.jpg" alt="Image 2">
+								<h3>Recipe 2</h3>
+								<p>Description for Recipe 2</p>
+								<button class="view-button">View</button>
+							</div>
+							<div class="latest-item">
+								<img src="/assets/921d2ff7-15cb-447e-a5a5-b0d72d28900c1.jpg" alt="Image 3">
+								<h3>Recipe 3</h3>
+								<p>Description for Recipe 3</p>
+								<button class="view-button">View</button>
+							</div>
+						</section>
+					</div>
+				</div>
+			</div>
+
+			<div class="component" data-component-name="recipes">
+				<div class="component-state">
+						<div class="parent">
+							<form>
+								<h2>Share your recipes</h2>
+								<label for="name">Your Name</label>
+								<input type="text" id="name" name="name" required>
+								<label for="recipe_name">Recipe Name</label>
+							  <input type="text" id="recipe_name" name="recipe_name" required>
+								<label for="email">Your Email</label>
+								<input type="email" id="email" name="email" required>
+							  <label for="servings_name">Servings</label>
+							  <input type="text" id="servings_name" name="servings_name" required>
+							  <label for="cook-time_name">Cook time</label>
+							  <input type="text" id="cook-time_name" name="cook-time_name" required>
+							  <label for="nutrition_name">Add Nutrition Macros</label>
+							  <input type="text" id="nutrition_name" name="nutrition_name" required>
+							  <label for="ingredients">Ingredients</label>
+							  <input type="text" id="ingredients_name" name="ingredients_name" required>
+							  <div id="ingredientInputs"></div>
+							  <button type="button" id="addIngredientBtn">Add Ingredient</button>
+							  <label for="directions">Directions</label>
+							  <textarea id="directions" name="Directions" rows="8" required></textarea>
+							  <button type="submit">Add Recipe</button>
+							</form>
+						</div>
+				</div>
+			</div>
+
+			<div class="component" data-component-name="tips">
+				<div class="component-state">
+					<div class="component-state__name">Tips</div>
+				</div>
+			</div>
+
+			<div class="component" data-component-name="qanda">
+				<div class="component-state">
+					<div class="component-state__name">Q&A</div>
+				</div>
+			</div>
+		</main>
+		<footer class="footer-content">
+			<img src="/assets/_1d54a118-f607-48ae-b9fb-c2ae6ad72f82-removebg-preview.png" alt="Logo" class="logo">
+			<div class="footer-links">
+				<div class="link-group">
+					<a href="#">Info -</a>
+					<a href="#">Support -</a>
+					<a href="#">Marketing</a>
+				</div>
+				<div class="link-group">
+					<a href="#">Terms of Use -</a>
+					<a href="#">Privacy Policy</a>
+				</div>
+			</div>
+			<div class="copyright">
+				<p>© 2024 Taste. All Rights Reserved</p>
+			</div>
+	  </footer>
+	</div>
+	<script src="/js/script.js"></script>
+</body>
+</html>
